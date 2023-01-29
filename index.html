@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aim Training | Проект 5</title>
+  </head>
+  <body>
+    <div class="screen up">
+      <h1>Правила игры</h1>
+      <p>Сначала вы выбираете время игры от 5 до 30 секунд. Потом вам требуется набрать <br>
+        как можно больше очков. За каждый клик на круг вы получаете по 3 очка, за промах <br>
+        у вас отнимается 1 очко. После вы можете начать с начала с места выбора времени <br>
+        или вернуться на главную.</p>
+      <button class="rules-btn" id="rulesback">
+        Назад
+      </button>
+    </div>
+    
+    <div class="screen">
+      <h1>Aim Training</h1>
+      <a href="#" class="start" id="start">Начать игру</a>
+      <a href="#" class="rules" id="rules">Правила</a>
+    </div>
+
+    <div class="screen">
+      <h1>Выберите время</h1>
+      <ul class="time-list" id="time-list">
+        <li>
+          <button class="time-btn" data-time="5">
+            5 сек
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="10">
+            10 сек
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="20">
+            20 сек
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="30">
+            30 сек
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen">
+      <h3>Осталось <span id="time">00:00</span></h3>
+      <div class="board" id="board">
+        <div class="circle" id="circle"></div>
+      </div>
+      <h3>Счет: <span id="scorenumber">0</span></h3>
+    </div>
+
+    <div class="screen" id="finish">
+      <span id="score"></span>
+      <span id="balls"></span>
+      <ul class="finish-list">
+        <li>
+          <button class="main-finish-btn" id="main-finish-btn">
+            На главную
+          </button>
+        </li>
+        <li>
+          <button class="again-finish-btn" id="again-finish-btn">
+            Заново
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
